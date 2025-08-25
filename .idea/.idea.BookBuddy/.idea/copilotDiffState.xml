@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/BookBuddy.Domain/BookBuddy.Domain.csproj">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/BookBuddy.Domain/BookBuddy.Domain.csproj" />
+              <option name="updatedContent" value="&lt;Project Sdk=&quot;Microsoft.NET.Sdk&quot;&gt;&#10;  &lt;PropertyGroup&gt;&#10;    &lt;TargetFramework&gt;net8.0&lt;/TargetFramework&gt;&#10;  &lt;/PropertyGroup&gt;&#10;&lt;/Project&gt;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/BookBuddy.Domain/Entity.cs">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/BookBuddy.Domain/Entity.cs" />
+              <option name="updatedContent" value="namespace BookBuddy.Domain&#10;{&#10;    public abstract class Entity&#10;    {&#10;        public Guid Id { get; protected set; }&#10;    }&#10;}&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
