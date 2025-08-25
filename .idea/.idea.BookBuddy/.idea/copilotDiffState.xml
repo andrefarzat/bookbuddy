@@ -11,14 +11,6 @@
             </PendingDiffInfo>
           </value>
         </entry>
-        <entry key="$PROJECT_DIR$/BookBuddy.Domain/Entity.cs">
-          <value>
-            <PendingDiffInfo>
-              <option name="filePath" value="$PROJECT_DIR$/BookBuddy.Domain/Entity.cs" />
-              <option name="updatedContent" value="namespace BookBuddy.Domain&#10;{&#10;    public abstract class Entity&#10;    {&#10;        public Guid Id { get; protected set; }&#10;    }&#10;}&#10;" />
-            </PendingDiffInfo>
-          </value>
-        </entry>
       </map>
     </option>
   </component>
