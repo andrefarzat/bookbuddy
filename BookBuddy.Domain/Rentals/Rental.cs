@@ -4,12 +4,12 @@ namespace BookBuddy.Domain.Rentals
 {
     public class Rental : AggregateRoot
     {
-        public Guid CarId { get; private set; }
-        public Guid CustomerId { get; private set; }
-        public DateTime RentalDate { get; private set; }
-        public DateTime DueDate { get; private set; }
-        public DateTime? ReturnDate { get; private set; }
-        public RentalStatus Status { get; private set; }
+    public Guid CarId { get; protected set; }
+    public Guid CustomerId { get; protected set; }
+    public DateTime RentalDate { get; protected set; }
+    public DateTime DueDate { get; protected set; }
+    public DateTime? ReturnDate { get; protected set; }
+    public RentalStatus Status { get; protected set; }
 
         public Rental(Guid id, Guid carId, Guid customerId, DateTime rentalDate, DateTime dueDate)
         {
@@ -20,6 +20,9 @@ namespace BookBuddy.Domain.Rentals
             DueDate = dueDate;
             Status = RentalStatus.Active;
         }
+
+        // Parameterless constructor for EF Core
+        protected Rental() { }
 
         public void ReturnCar(DateTime returnDate)
         {
