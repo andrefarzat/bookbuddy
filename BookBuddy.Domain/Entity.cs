@@ -1,9 +1,8 @@
 using System;
 
-namespace BookBuddy.Domain
+namespace BookBuddy.Domain;
+
+public abstract class Entity
 {
-	public abstract class Entity
-	{
-		public Guid Id { get; protected set; }
-	}
+	public Guid Id { get; protected set; }
 }

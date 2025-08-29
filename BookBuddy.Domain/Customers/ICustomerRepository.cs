@@ -2,10 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace BookBuddy.Domain.Customers
+namespace BookBuddy.Domain.Customers;
+public interface ICustomerRepository
 {
-    public interface ICustomerRepository
-    {
-        // Add customer-specific repository methods here if needed
-    }
+    // Add customer-specific repository methods here if needed
 }

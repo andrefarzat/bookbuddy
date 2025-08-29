@@ -1,39 +1,37 @@
 using System;
 
-namespace BookBuddy.Domain.Cars
+namespace BookBuddy.Domain.Cars;
+public class Car : AggregateRoot
 {
-    public class Car : AggregateRoot
+public string Make { get; protected set; }
+public string Model { get; protected set; }
+public int Year { get; protected set; }
+public string LicensePlate { get; protected set; }
+public CarStatus Status { get; protected set; }
+
+    public Car(Guid id, string make, string model, int year, string licensePlate, CarStatus status)
     {
-    public string Make { get; protected set; }
-    public string Model { get; protected set; }
-    public int Year { get; protected set; }
-    public string LicensePlate { get; protected set; }
-    public CarStatus Status { get; protected set; }
-
-        public Car(Guid id, string make, string model, int year, string licensePlate, CarStatus status)
-        {
-            Id = id;
-            Make = make;
-            Model = model;
-            Year = year;
-            LicensePlate = licensePlate;
-            Status = status;
-        }
-
-        // Parameterless constructor for EF Core
-        protected Car() { }
-
-        public void SetStatus(CarStatus status)
-        {
-            Status = status;
-        }
+        Id = id;
+        Make = make;
+        Model = model;
+        Year = year;
+        LicensePlate = licensePlate;
+        Status = status;
     }
 
-    public enum CarStatus
+    // Parameterless constructor for EF Core
+    protected Car() { }
+
+    public void SetStatus(CarStatus status)
     {
-        Available,
-        Rented,
-        Maintenance,
-        Unavailable
+        Status = status;
     }
+}
+
+public enum CarStatus
+{
+    Available,
+    Rented,
+    Maintenance,
+    Unavailable
 }
