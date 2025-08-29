@@ -1,9 +1,8 @@
 using System;
 
-namespace BookBuddy.Domain
+namespace BookBuddy.Domain;
+
+public abstract class AggregateRoot : Entity
 {
-	public abstract class AggregateRoot : Entity
-	{
-		// Aggregate root base logic can be added here
-	}
+	// Aggregate root base logic can be added here
 }
